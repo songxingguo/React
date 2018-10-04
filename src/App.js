@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Index from  './index/index';
+import Routes from './Routes.js';
 
 class App extends Component {
   render() {
@@ -28,7 +28,6 @@ class App extends Component {
           >
               Demo
           </a>
-          {/*<Index />*/}
         </header>
       </div>
     );
