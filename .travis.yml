@@ -10,19 +10,19 @@ before_script:
  # - npm install -g gulp
 
 script:
-  - yarn run deploy
+  - yarn run build
 
 after_script:
-  - cd ./public
+  - cd ./build
   - git init
   - git config user.name "songxingguo"
   - git config user.email "1328989942@qq.com"
   - git add .
   - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Github Pages
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages
   # Github Pages
-  - git push --quiet "https://${GH_TOKEN}@${GH_REF}" master:master --tags
+  - git push --quiet "https://${GH_TOKEN}@${GH_REF}" gh-pages:gh-pages --tags
 # E: Build LifeCycle
 
 branches:
