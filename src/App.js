@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Routes from './Routes.js';
 
 class App extends Component {
   render() {
@@ -19,14 +18,6 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
-          </a>
-          <a
-              className="App-link"
-              href="http://localhost:3000/index/index1.html"
-              target="_blank"
-              rel="noopener noreferrer"
-          >
-              Demo
           </a>
         </header>
       </div>
