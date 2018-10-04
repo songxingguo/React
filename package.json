@@ -1,6 +1,7 @@
 {
   "name": "reactdome",
   "version": "0.1.0",
+  "homepage": "https://songxingguo.github.io/React",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.0",
