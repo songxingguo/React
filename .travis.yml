@@ -4,12 +4,13 @@ node_js: stable
 # S: Build Lifecycle
 install:
   - npm install
+  - npm yarn install
 
 before_script:
  # - npm install -g gulp
 
 script:
-  - npm run build
+  - yarn run build
 
 after_script:
   - cd ./build
