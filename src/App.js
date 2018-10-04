@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Index from  './index/index';
 
 class App extends Component {
   render() {
@@ -19,6 +20,15 @@ class App extends Component {
           >
             Learn React
           </a>
+          <a
+              className="App-link"
+              href="http://localhost:3000/index/index1.html"
+              target="_blank"
+              rel="noopener noreferrer"
+          >
+              Demo
+          </a>
+          {/*<Index />*/}
         </header>
       </div>
     );
